@@ -15,8 +15,6 @@ import java.util.*;
 public class BrowserStackJUnitTest {
 
     public AndroidDriver driver;
-    public String userName;
-    public String accessKey;
     public UiAutomator2Options options;
     public static Map<String, Object> browserStackYamlMap;
     public static final String USER_DIR = "user.dir";
