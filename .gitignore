@@ -5,3 +5,4 @@ local.log
 *.iml
 */*/logs
 .DS_Store
+log/
