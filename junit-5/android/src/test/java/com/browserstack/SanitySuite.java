@@ -7,4 +7,5 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 @SelectClasses({FirstTest.class, SecondTest.class})
 @SuiteDisplayName("Sanity suite")
 public class SanitySuite {
+    //suite
 }
