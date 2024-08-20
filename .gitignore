@@ -4,3 +4,4 @@ local.log
 .idea
 *.iml
 */*/logs
+.DS_Store

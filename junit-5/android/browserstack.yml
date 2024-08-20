@@ -3,17 +3,17 @@
 # =============================
 # Add your BrowserStack userName and acccessKey here or set BROWSERSTACK_USERNAME and
 # BROWSERSTACK_ACCESS_KEY as env variables
-userName: BROWSERSTACK_USERNAME
-accessKey: BROWSERSTACK_ACCESS_KEY
+userName: nithyamani3
+accessKey: sVGjG5FRHgHdDAQvLjJx
 
 # ======================
 # BrowserStack Reporting
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: BrowserStack Samples
+projectName: Junit5Suite
 # Set `buildName` as the name of the job / testsuite being run
-buildName: browserstack build
+buildName: browserstack-build-junit5
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
 # buildName. Choose your buildIdentifier format from the available expressions:
 # ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
@@ -75,3 +75,4 @@ browserstackLocal: true # <boolean> (Default false)
 # ===================
 debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
 networkLogs: false # <boolean> Set to true to enable HAR logs capturing
+testObservability: true

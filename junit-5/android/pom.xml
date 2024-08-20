@@ -14,20 +14,43 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <surefire.version>3.0.0-M5</surefire.version>
         <config.file>com/browserstack/FirstTest.java</config.file>
-        <confif.file>browserstack.yml</confif.file>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.9.0</version>
+            <version>5.10.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.9.0</version>
+            <version>5.10.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-api</artifactId>
+            <version>1.10.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-commons</artifactId>
+            <version>1.10.3</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-engine</artifactId>
+            <version>1.10.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.10.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -107,7 +130,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <includes>
-                                <include>com/browserstack/FirstTest.java</include>
+                                <include>com/browserstack/SanitySuite.java</include>
                             </includes>
                             <argLine>
                                 -javaagent:${com.browserstack:browserstack-java-sdk:jar}
